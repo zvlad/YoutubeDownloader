@@ -566,6 +566,7 @@ class YoutubeDownloader
 				}
 
 				$typeParts = explode(';', $stream_maps[$key]['type']);
+				// comment zvlad test
 				// TODO: Use container of known itags as extension here
 				$stream_maps[$key]['filename'] = $filename . '.' . $this->getExtension(trim($typeParts[0]));
 
